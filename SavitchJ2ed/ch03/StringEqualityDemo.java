@@ -1,0 +1,26 @@
+public class StringEqualityDemo
+{
+    public static void main(String[] args) 
+    {
+        String s1, s2;
+ 
+        System.out.println("Enter two lines of text:");
+        s1 = SavitchIn.readLine();
+        s2 = SavitchIn.readLine();
+ 
+        if (s1.equals(s2))
+            System.out.println("The two lines are equal.");
+        else
+            System.out.println("The two lines are not equal.");
+
+        if (s2.equals(s1))
+            System.out.println("The two lines are equal.");
+        else
+            System.out.println("The two lines are not equal.");   
+
+        if (s1.equalsIgnoreCase(s2))
+            System.out.println("But, the lines are equal ignoring case.");
+        else
+            System.out.println("Lines are not equal even ignoring case.");
+    }
+}
