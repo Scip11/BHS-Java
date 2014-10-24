@@ -2,7 +2,6 @@ public class a1 {
 	
 	public static void main(String[] args){	
 		SavitchIn savitchIn = new SavitchIn();
-		String sentence;
 		int sentenceLength;
 		char sentenceEnd;
 		char ans;
@@ -10,6 +9,7 @@ public class a1 {
 		
 
 		do {
+			String sentence = "";
 			System.out.println("Please write a question.");
 			sentence = savitchIn.readLine();
 			sentenceLength = sentence.length();
