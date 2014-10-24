@@ -1,31 +1,22 @@
+
 public class a5 {
+	
 	public static void main(String[] args){	
 		SavitchIn savitchIn = new SavitchIn();
+		String word;
 		String sentence;
-		String newSentence;
-		long sentenceLength;
-		long i;
-
 		System.out.println("Write a sentence and then press enter/return.");
+		
+		word = savitchIn.readWord();
 		sentence = savitchIn.readLine();
-
-		System.out.println("	You entered:");
-		System.out.println("	" + sentence);
-
-		sentence = sentence.trim();
 		
-		String[] sentenceArray = sentence.split(" ");
+
+		sentence.replace(word, " ");
 		
-		i = sentenceArray[].lenght();
 
-		newSentence = sentenceArray[i] + " ";
-		i = 0;
-		while(i < i-1){
-			newSentence = newSentence + sentenceArray[i];
-			i++;
-		}
-
+		sentence = sentence + " " + word;
+				
 		System.out.println(sentence);
-
+		System.exit(0);
 	}
 }
